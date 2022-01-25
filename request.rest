@@ -1,0 +1,29 @@
+GET http://localhost:3000/posts 
+Authorization: Bearer b11d3c5e3536676161f1499bf9fdb68948100f27887d26c2c72421bddc81d9b21712a7d33ec7d70a15d19bdff64395d6fac8ac1345bd2ea8e0254332a9e66b39
+
+###
+
+DELETE http://localhost:4000/logout 
+Content-Type: application/json
+
+{
+"token": "fb5a56b3f68c5530dd4de8ee114a0d7d278acbff09d2ef4db4075d25834816e3b60ba58f4f0473b69c770ee85b1cda567b48f12ca68bcc307bcb4ff68ea70edd"
+}
+
+###
+
+POST http://localhost:4000/token 
+Content-Type: application/json
+
+{
+"token": "b11d3c5e3536676161f1499bf9fdb68948100f27887d26c2c72421bddc81d9b21712a7d33ec7d70a15d19bdff64395d6fac8ac1345bd2ea8e0254332a9e66b39"
+}
+
+###
+
+POST http://localhost:4000/login 
+Content-Type: application/json
+
+{
+"username": "Kyle"
+}
